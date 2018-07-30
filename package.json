@@ -1,0 +1,25 @@
+{
+  "name": "webGL-EX",
+  "version": "1.0.0",
+  "description": "",
+  "main": "three.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MistyBlunch/webGL-EX.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MistyBlunch/webGL-EX/issues"
+  },
+  "homepage": "https://github.com/MistyBlunch/webGL-EX#readme",
+  "devDependencies": {
+    "webpack": "^4.16.1",
+    "webpack-cli": "^3.1.0"
+  }
+}
