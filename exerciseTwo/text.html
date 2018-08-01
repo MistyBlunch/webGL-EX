@@ -4,19 +4,14 @@
 
 <head>
     <title>Example 01.02 - First Scene</title>
-    <script type="text/javascript" src="../libs/jquery-1.9.0.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
     <style>
         body{
-            /* set margin to 0 and overflow to hidden, to go fullscreen */
             margin: 0;
             overflow: hidden;
         }
     </style>
 </head>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/94/three.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/94/three.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/94/three.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/94/three.module.js"></script>
 <body>
@@ -27,8 +22,9 @@
 
 <!-- Javascript code that runs our Three.js examples -->
 <script type="text/javascript">
+
+var gl = document.getElementById('WebGL-output')
     // once everything is loaded, we run our Three.js stuff.
-    $(function () {
         // create a scene, that will hold all our elements such as objects, cameras and lights.
         var scene = new THREE.Scene();
         // create a camera, which defines where we're looking at.
@@ -75,10 +71,9 @@
         camera.position.z = 10;
         camera.lookAt(scene.position);
         // add the output of the renderer to the html element
-        $("#WebGL-output").append(renderer.domElement);
+        gl.appendChild(renderer.domElement);
         // render the scene
         renderer.render(scene, camera);
-    });
 </script>
 </body>
 </html>
